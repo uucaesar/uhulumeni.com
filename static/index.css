@@ -3,6 +3,8 @@
     --letter-spacing: -2px;
     --margin-delete: 0px;
 
+    --shadows: 'Shadows Into Light Two', cursive;
+
     /* Navbar Properties */
     --nav-m-padding: 30px;
     --nav-t-padding: 40px 80px;
@@ -17,13 +19,14 @@
     --semi-bold-weight: 600;
     --bold-weight: 700;
     /* Font sizes */
-    --t-m-size: 40px;
+    --t-m-size: 51px;
     --t-d-size: 80px;
 
-    --h1-m-size: 30px;
-    --h2-m-size: 20px;
+    --h1-m-size: 60px;
+    --heading2-m-size: 37px;
+    --h2-m-size: 30px;
     --h3-m-size: 21px;
-    --p-m-size: 14px;
+    --p-m-size: 15px;
     --ct-m-size: 35px;
     --csub-m-size: 16px;
     --price-m-size: 34px;
@@ -34,6 +37,7 @@
     --main-color: black;
     --secondary-colour: rgba(0, 0, 0, 0.7);
     --tertiary-colour: rgba(0, 0, 0, 0.5);
+    --watermark-color: rgba(0, 0, 0, 0.2);
    /* Container Properties */
    --container-m-padding: 100px 30px 0px 30px;
    --container-m-gap: 20px;
@@ -45,8 +49,8 @@
     --card-gap: 10px;
     --price-gap: 7px;
 
-    --button-padding: 15px 30px;
-    --border-radius: 10px;
+    --button-padding: 10px 20px;
+    --border-radius: 5px;
     --button-color: black;
     --button-border: none;
     --button-font-weight: 500;
@@ -56,7 +60,7 @@
     --comma-height: 30px;
     --comma-padding: 40px;
 
-    --line-height-pri: 22px;
+    --line-height-pri: 35px;
     --line-height-sec: 22px;
 
 }
@@ -100,7 +104,7 @@ section {
     width: 100vw;
     min-height: 100vh;
     background: white;
-    position: relative;
+    position: sticky;
     top: 0;
     z-index: 10;
 }
@@ -122,21 +126,26 @@ footer {
 
 .title {
     font-family: "Shadows Into Light Two", cursive;
-    word-spacing: -2px;
-    font-weight: var(--medium-weight);
+    word-spacing: -10px;
+    font-weight: var(--bold-weight);
     font-size: var(--t-m-size);
+    line-height: 67px;
 }
 .underline {
     text-decoration: underline;
 }
 h1 {
+    font-family: var(--shadows);
+    font-weight: var(--regular-weight);
     font-size: var(--h1-m-size);
-    font-weight: var(--bold-weight);
     margin: var(--margin-delete);
+    color: var(--watermark-color);
+    text-align: right;
+    margin-bottom: -10px;
 }
 p, a {
     font-size: var(--p-m-size);
-    font-weight: var(--light-weight);
+    font-weight: var(--regular-weight);
     margin: var(--margin-delete);
     color: black;
     line-height: var(--line-height-pri);
@@ -173,9 +182,21 @@ button {
     cursor: pointer;
     width: fit-content;
     font-family: var(--space-grotesk);
+    margin-top: 30px;
+    border: 2px solid black;
+}
+.secondary {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+.btn-container {
+    display: flex;
+    gap: 20px;
 }
 .heading2 {
-    font-size: var(--h2-m-size);
+    font-family: var(--shadows);
+    font-size: var(--heading2-m-size);
     font-weight: var(--medium-weight);
     display: flex;
     gap: 20px;
@@ -236,6 +257,13 @@ li {
     position: relative;
     top: auto;
     z-index: 20;
+}
+h2 {
+    margin: var(--margin-delete);
+    font-weight: var(--regular-weight);
+    font-size: var(--h2-m-size);
+    font-family: var(--shadows);
+    
 }
 h3 {
     margin: var(--margin-delete);
