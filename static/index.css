@@ -121,7 +121,9 @@ footer {
 }
 
 .title {
-    font-weight: var(--bold-weight);
+    font-family: "Shadows Into Light Two", cursive;
+    word-spacing: -2px;
+    font-weight: var(--medium-weight);
     font-size: var(--t-m-size);
 }
 .underline {
