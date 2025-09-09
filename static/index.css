@@ -110,12 +110,12 @@ section {
 }
 footer {
     width: 100vw;
-    min-height: 100vh;
     background: white;
     position: relative;
     top: 0;
     z-index: 10;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -299,11 +299,19 @@ h3 {
     font-weight: var(--bold-weight);
 }
 footer img{
-    width: var(--card-img);
+    width: 169px;
     align-self: flex-end;
 }
 footer div {
     font-size: var(--p-m-size);
+}
+footer, footer .container {
+    color: white;
+    background-color: black;
+}
+footer a, footer p  {
+    color: white;
+    line-height: normal;
 }
 .footer-title {
     font-size: var(--footer-title-m-size);
@@ -312,25 +320,31 @@ footer div {
 .comp-details {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 .footer-no {
     text-decoration: none;
-    color: black;
 }
 .footer-email {
-    color: var(--secondary-colour);
     text-decoration: none;
 }
 .footer-address {
-    color: var(--tertiary-colour);
     text-decoration: none;
 }
+footer .container {
+    padding: 30px;
+}
 .discl-copy {
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 20px 0px;
+}
+.social-links {
     display: flex;
-    flex-direction: column;
-    border-top: 1px solid black;
-    gap: 20px;
-    padding: 20px 0;
+    gap: 5px;
+    justify-content: end;
+}
+.social-links img {
+    width: 30px;
 }
 nav {
     display: flex;
