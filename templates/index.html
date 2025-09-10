@@ -129,7 +129,17 @@
         const links = document.querySelector('.links');
         links.classList.toggle('active');
     });
-
+    const menu = document.querySelector('.links');
+    const menuIcon = document.querySelector('.menu');
+    document.addEventListener('click', (e) => {
+        if (
+            menu.classList.contains('active') &&
+            !menu.contains(e.target) &&
+            !menuIcon.contains(e.target)
+        ) {
+            menu.classList.remove('active');
+        }
+    });
     document.addEventListener("DOMContentLoaded", () => {
         const elements = document.querySelectorAll(".container > *");
 
