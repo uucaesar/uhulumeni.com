@@ -142,8 +142,9 @@ h1 {
     color: var(--watermark-color);
     text-align: right;
     margin-bottom: -10px;
+    line-height: 55px;
 }
-p, a {
+p, a, li {
     font-size: var(--p-m-size);
     font-weight: var(--regular-weight);
     margin: var(--margin-delete);
@@ -251,14 +252,8 @@ button {
     font-weight: var(--regular-weight);
     color: var(--tertiary-colour);   
 }
-li {
-    font-size: var(--p-m-size);
-    margin-bottom: var(--card-gap);
-    font-weight: var(--light-weight);
-    line-height: var(--line-height-sec);
-}
-#bypass-vh {
-    height: auto;
+#bypass-vh, #partners {
+    min-height: auto;
     position: relative;
     top: auto;
     z-index: 20;
@@ -379,8 +374,35 @@ button:hover {
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
 }
-
-
+#learners h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+#learners button {
+    margin: 0;
+    width: auto;
+}
+#terms-and-conditions .container {
+    padding-bottom: 90px;
+}
+ol {
+    margin: 0;
+    padding-left: 15px;
+}
+li {
+    margin-bottom: var(--container-m-gap);
+}
+li::marker {
+    text-align: 5px !important;
+}
+#partners img {
+    width: 90px;
+}
+#partners .img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* Tablet styles */
 @media (min-width: 601px) and (max-width: 1024px) {
   nav {

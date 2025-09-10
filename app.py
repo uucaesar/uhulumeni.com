@@ -7,5 +7,9 @@ application = app  # For compatibility with some deployment setups
 def home():
     return render_template("index.html")
 
+@app.route('/learners-test-bookings')
+def property_1():
+    return render_template("learners.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
