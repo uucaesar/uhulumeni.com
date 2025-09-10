@@ -39,7 +39,7 @@
     --tertiary-colour: rgba(0, 0, 0, 0.5);
     --watermark-color: rgba(0, 0, 0, 0.2);
    /* Container Properties */
-   --container-m-padding: 90px 30px 0px 30px;
+   --container-m-padding: 90px 30px 90px 30px;
    --container-m-gap: 20px;
     /* Card Properties */
     --card-border: 3px solid black;
@@ -102,7 +102,7 @@ body {
 }
 section {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 80vh;
     background: white;
     position: sticky;
     top: 0;
