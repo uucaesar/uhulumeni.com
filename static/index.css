@@ -395,14 +395,34 @@ li {
 li::marker {
     text-align: 5px !important;
 }
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+#partners .container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 #partners img {
     width: 90px;
 }
 #partners .img-container {
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    gap: 30px;
     align-items: center;
+    animation: scroll 25s linear infinite;
 }
+.partners {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+
 /* Tablet styles */
 @media (min-width: 601px) and (max-width: 1024px) {
   nav {
