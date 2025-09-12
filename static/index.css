@@ -380,7 +380,7 @@ button:hover {
 }
 #learners button {
     margin: 0;
-    width: auto;
+    width: 100%;
 }
 #terms-and-conditions .container {
     padding-bottom: 90px;
