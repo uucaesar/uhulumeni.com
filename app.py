@@ -15,5 +15,10 @@ def learners():
 def reductions():
     return render_template("reductions.html")
 
+@app.route('/traffic-fine-enquiries')
+def enquiries():
+    return render_template("enquiries.html")
+
+
 if __name__ == '__main__':
     app.run(debug=True)
